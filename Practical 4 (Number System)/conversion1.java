@@ -8,7 +8,6 @@ class Practical4
 		
 		Scanner sc=new Scanner(System.in);
 		
-		
 		System.out.println("Select The Option");
 		System.out.println("\n 1.Byte");
 		System.out.println("\n 2.Short");
@@ -237,7 +236,7 @@ class Practical4
   public String decimalToBinary(String numString)
   {
   
-    int decimal =Integer.parseInt(numString); //Convert String To Integer
+    int decimal =Integer.parseInt(numString); 
     String binary="";
   
     if(decimal==0)
@@ -255,7 +254,7 @@ class Practical4
   
   public String decimalToOctal(String numString)
   {
-    int decimalNum=Integer.parseInt(numString); //Convert String To Integer
+    int decimalNum=Integer.parseInt(numString); 
     String octal="";
     if(decimalNum==0)
     {
@@ -265,8 +264,7 @@ class Practical4
     while(decimalNum>0)
     {
       octal=(decimalNum%8)+octal;
-      decimalNum=decimalNum/8; //Divide Number to 8 because To calculate the octal number
-    }
+      decimalNum=decimalNum/8; 
     return octal;
   }
  
@@ -429,7 +427,7 @@ class Practical4
 
  public String hexaToOctal(String hexaString)
  {
-    int decimal=0;
+ int decimal=0;
  String binary="";
  String hexaChars="0123456789ABCDEF";
  hexaString=hexaString.toUpperCase();
